@@ -465,7 +465,7 @@ textarea.input {
   font-size: 12px;
 }
 
-.header-ctn>div>a>.qty {
+.header-ctn>div>a>.counter {
   position: absolute;
   right: 15px;
   top: -10px;
@@ -2129,4 +2129,8 @@ textarea.input {
     float: none;
     margin-top: 10px;
   }
+}
+
+button{
+  outline: none
 }
