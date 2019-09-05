@@ -216,7 +216,7 @@
 							</div>
 							<div class="product-body">
 								<h3 class="product-name"><a href="#">${productName}</a></h3>
-								<h4 class="product-price"><span><input type="number" value="1" class="qty" style="width: 40px;"></span>${productPrice}</h4>
+								<h4><span class="product-price"><input type="number" value="1" class="qty" style="width: 40px;"><span class="product-price">${productPrice}</span></h4>
 							</div>
 							<button class="delete"><i class="fa fa-close"></i></button>
 						</div>`;
@@ -229,6 +229,13 @@
 				circle++
 				document.getElementsByClassName('counter')[1].textContent = circle
 				document.getElementById('num').textContent = circle + " Item(s) selected";
+				//preventing negative inputs
+				var inputqty = document.getElementsByClassName('qty');
+				for(let i = 0; i < inputqty.length; i++){
+					var increase = inputqty[i]
+					increase.addEventListener('change', increaseQty)
+				}
+				updateCartTotal()
 			}
 			addItemToCart(productName, productPrice, imgSrc);
 
@@ -242,22 +249,30 @@
 		});
 	}
 
-	// Update Cart Total
-	function updateCartTotal() {
-		let cartListItem = $('.cart-list')[0];
-		let productWidget = $($(cartListItem)).find('.product-widget');
-		let total = 0
-
-		for (let i = 0; i < productWidget.length; i++) {
-			const productWidgetSelect = productWidget[i];
-			let productPrice = $($(productWidgetSelect)).find('.product-price')[0];
-			let productQuantity = $($(productWidgetSelect)).find('.qty')[0];
-			let price = productPrice.innerText.replace('N', '')
-			let quantity = productQuantity.innerText;
-			total = price * quantity;
+	 //Fn for preventing nagative input in Qty
+	 function increaseQty(e){
+		var input = e.target;
+		if(isNaN(input.value) || input.value <= 0){
+			input.value = 1
+		}
+		updateCartTotal()
 		}
 
-		$('.sum')[0].innerText = `SUBTOTAL: # ${total}`
+	// Update Cart Total
+	function updateCartTotal() {
+		var cartDropDown = document.getElementsByClassName("cart-dropdown")[0];
+	    var cartlist = cartDropDown.getElementsByClassName("cart-list")[0];
+		var productWidget = cartlist.getElementsByClassName("product-widget");
+		var sum = 0;
+		for (var i = 0; i < productWidget.length; i++){
+			var productcontainer = productWidget[i]
+			var productPrice = productcontainer.getElementsByClassName("product-price")[1];
+			var productQty = productcontainer.getElementsByClassName("qty")[0];
+			var price = productPrice.textContent.replace("N", '');
+			var quantity = productQty.value;
+			sum = sum + (price * quantity)
+		}
+		document.getElementsByClassName("sum")[0].textContent = "TOTAL: N " + sum;
 	}
 	updateCartTotal();
 	////////////////////////////<<<End Of Cart Fn>>>///////////////////////////
