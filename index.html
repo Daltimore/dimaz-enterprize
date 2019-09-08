@@ -86,7 +86,7 @@
 									<a href="#">
 										<i class="fa fa-heart-o"></i>
 										<span>Wishlist</span>
-										<div class="qty"></div>
+										<div class="counter"></div>
 									</a>
 								</div>
 								<!-- /Wishlist -->
@@ -96,17 +96,17 @@
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
 										<span> Cart</span>
-										<div class="qty"></div>
+										<div class="counter"></div>
 									</a>
 									<div class="cart-dropdown">
-										<div class="cart-list">
-											<div class="product-widget">
+									 <div class="cart-list">
+											<!-- <div class="product-widget">
 												<div class="product-img">
 													<img src="./img/product01.png" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">product name goes here</a></h3>
-													<h4 class="product-price"><span class="qty">1x</span>N980.00</h4>
+													<h4 class="product-price"> <span><input type="number" value="1" class="qty" style="width: 30px;"></span>N980.00</h4>
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
 											</div>
@@ -117,18 +117,18 @@
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">product name goes here</a></h3>
-													<h4 class="product-price"><span class="qty">3x</span>N980.00</h4>
+													<h4 class="product-price"><span><input type="number" value="1" class="qty" style="width: 30px;"></span>N980.00</h4>
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-										</div>
+											</div> -->
+										</div> 
 										<div class="cart-summary">
-											<small>3 Item(s) selected</small>
+											<small id="num">3 Item(s) selected</small>
 											<h5 class="sum">SUBTOTAL: N2940.00</h5>
 										</div>
 										<div class="cart-btns">
 											<a href="#">View Cart</a>
-											<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+											<a href="checkout.html">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -274,7 +274,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -305,7 +305,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -336,7 +336,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 												</div>
 												<div class="product-btns">
@@ -359,7 +359,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -387,7 +387,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -509,7 +509,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -540,7 +540,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -571,7 +571,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 												</div>
 												<div class="product-btns">
@@ -594,7 +594,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -622,7 +622,7 @@
 											<div class="product-body">
 												<p class="product-category">Category</p>
 												<h3 class="product-name"><a href="#">product name goes here</a></h3>
-												<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+												<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
@@ -680,7 +680,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -693,7 +693,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -706,7 +706,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -721,7 +721,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -734,7 +734,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -747,7 +747,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -773,7 +773,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -786,7 +786,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -799,7 +799,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -814,7 +814,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -827,7 +827,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -840,7 +840,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -868,7 +868,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -881,7 +881,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -894,7 +894,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -909,7 +909,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -922,7 +922,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -935,7 +935,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">N980.00 <del class="product-old-price">N990.00</del></h4>
+										<h4><span class="product-price">N980.00</span> <del class="product-old-price">N990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -1100,5 +1100,7 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/payment.js"></script>
+
 	</body>
 </html>
